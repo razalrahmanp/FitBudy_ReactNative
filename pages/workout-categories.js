@@ -1,3 +1,6 @@
+import Card1 from "../components/card1";
+import NavigationBarIcon from "../components/navigation-bar-icon";
+
 const WorkoutCategories = () => {
   return (
     <div className="relative bg-dark-1 w-full h-[812px] overflow-hidden text-left text-xl text-white font-body-regular">
@@ -19,112 +22,84 @@ const WorkoutCategories = () => {
           Advance
         </div>
       </div>
-      <div className="absolute h-[84.73%] w-[87.2%] top-[21.8%] right-[6.4%] bottom-[-6.53%] left-[6.4%] text-mid">
-        <div className="absolute h-[23.26%] w-full top-[76.74%] right-[0%] bottom-[0%] left-[0%]">
-          <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%]">
-            <img
-              className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] rounded-2xl max-w-full overflow-hidden max-h-full object-cover"
-              alt=""
-              src="/image11@2x.png"
-            />
-            <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] rounded-2xl [background:linear-gradient(180deg,_rgba(17,_17,_18,_0),_rgba(17,_17,_18,_0.6))]" />
-          </div>
-          <div className="absolute bottom-[16px] left-[16px] h-[41px] flex flex-col items-start justify-end gap-[4px]">
-            <div className="relative font-semibold">Drill Essentials</div>
-            <div className="flex flex-row items-center justify-start gap-[5px] text-smi">
-              <div className="relative bg-primary w-[11px] h-0.5 [transform:_rotate(-90deg)] [transform-origin:0_0]" />
-              <div className="relative leading-[16px]">
-                06 Workouts for Beginner
-              </div>
-            </div>
-          </div>
-          <div className="absolute right-[16px] bottom-[16px] w-[33px] h-4 text-2xs">
-            <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] rounded bg-premium" />
-            <b className="absolute top-[6.25%] left-[15.15%] leading-[13px]">
-              PRO
-            </b>
-          </div>
-        </div>
-        <div className="absolute h-[23.26%] w-full top-[51.16%] right-[0%] bottom-[25.58%] left-[0%]">
-          <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%]">
-            <img
-              className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] rounded-2xl max-w-full overflow-hidden max-h-full object-cover"
-              alt=""
-              src="/image12@2x.png"
-            />
-            <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] rounded-2xl [background:linear-gradient(180deg,_rgba(17,_17,_18,_0),_rgba(17,_17,_18,_0.6))]" />
-          </div>
-          <div className="absolute bottom-[16px] left-[16px] h-[41px] flex flex-col items-start justify-end gap-[4px]">
-            <div className="relative font-semibold">Lower Body Strength</div>
-            <div className="flex flex-row items-center justify-start gap-[5px] text-smi text-primary">
-              <div className="relative bg-red-100 w-[11px] h-0.5 [transform:_rotate(-90deg)] [transform-origin:0_0]" />
-              <div className="relative leading-[16px]">
-                05 Workouts for Beginner
-              </div>
-            </div>
-          </div>
-          <div className="absolute right-[16px] bottom-[16px] w-[33px] h-4 text-2xs">
-            <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] rounded bg-red-100" />
-            <b className="absolute top-[6.25%] left-[15.15%] leading-[13px]">
-              PRO
-            </b>
-          </div>
-        </div>
-        <div className="absolute h-[23.26%] w-full top-[25.58%] right-[0%] bottom-[51.16%] left-[0%]">
-          <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%]">
-            <img
-              className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] rounded-2xl max-w-full overflow-hidden max-h-full object-cover"
-              alt=""
-              src="/image13@2x.png"
-            />
-            <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] rounded-2xl [background:linear-gradient(180deg,_rgba(17,_17,_18,_0),_rgba(17,_17,_18,_0.6))]" />
-          </div>
-          <div className="absolute bottom-[16px] left-[16px] h-[41px] flex flex-col items-start justify-end gap-[4px]">
-            <div className="relative font-semibold">Full Body Goal Crusher</div>
-            <div className="flex flex-row items-center justify-start gap-[5px] text-smi text-primary">
-              <div className="relative bg-red-100 w-[11px] h-0.5 [transform:_rotate(-90deg)] [transform-origin:0_0]" />
-              <div className="relative leading-[16px]">
-                07 Workouts for Beginner
-              </div>
-            </div>
-          </div>
-          <div className="absolute right-[16px] bottom-[16px] w-[33px] h-4 text-2xs">
-            <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] rounded bg-red-100" />
-            <b className="absolute top-[6.25%] left-[15.15%] leading-[13px]">
-              PRO
-            </b>
-          </div>
-        </div>
-        <div className="absolute h-[23.26%] w-full top-[0%] right-[0%] bottom-[76.74%] left-[0%]">
-          <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%]">
-            <img
-              className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] rounded-2xl max-w-full overflow-hidden max-h-full object-cover"
-              alt=""
-              src="/image14@2x.png"
-            />
-            <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] rounded-2xl [background:linear-gradient(180deg,_rgba(17,_17,_18,_0),_rgba(17,_17,_18,_0.6))]" />
-          </div>
-          <div className="absolute bottom-[16px] left-[16px] h-[41px] flex flex-col items-start justify-end gap-[4px]">
-            <div className="relative font-semibold">Wake Up Call</div>
-            <div className="flex flex-row items-center justify-start gap-[5px] text-smi text-primary">
-              <div className="relative bg-primary w-[11px] h-0.5 [transform:_rotate(-90deg)] [transform-origin:0_0]" />
-              <div className="relative leading-[16px]">
-                04 Workouts for Beginner
-              </div>
-            </div>
-          </div>
-          <div className="absolute right-[16px] bottom-[16px] w-[33px] h-4 hidden text-2xs">
-            <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] rounded bg-premium" />
-            <b className="absolute top-[6.25%] left-[15.15%] leading-[13px]">
-              PRO
-            </b>
-          </div>
-        </div>
+      <div className="absolute h-[84.73%] w-[87.2%] top-[21.8%] right-[6.4%] bottom-[-6.53%] left-[6.4%]">
+        <Card1
+          exerciseImageSize="/image17@2x.png"
+          exerciseTitle="Drill Essentials"
+          exerciseTime="06 Workouts  for Beginner"
+          showProBadge={showProBadge1}
+          card1Position="absolute"
+          card1Width="100%"
+          card1Height="23.26%"
+          card1Top="76.74%"
+          card1Right="0%"
+          card1Bottom="0%"
+          card1Left="0%"
+          vectorBackgroundColor="#d0fd3e"
+          subtitleColor="#fff"
+          rectangleDivBackgroundColor="#f6a800"
+        />
+        <Card1
+          exerciseImageSize="/image18@2x.png"
+          exerciseTitle="Lower Body Strength"
+          exerciseTime="05 Workouts  for Beginner"
+          showProBadge={showProBadge1}
+          card1Position="absolute"
+          card1Width="100%"
+          card1Height="23.26%"
+          card1Top="51.16%"
+          card1Right="0%"
+          card1Bottom="25.58%"
+          card1Left="0%"
+          vectorBackgroundColor="#ff2424"
+          subtitleColor="#d0fd3e"
+          rectangleDivBackgroundColor="#ff2424"
+        />
+        <Card1
+          exerciseImageSize="/image19@2x.png"
+          exerciseTitle="Full Body Goal Crusher"
+          exerciseTime="07 Workouts  for Beginner"
+          showProBadge={showProBadge1}
+          card1Position="absolute"
+          card1Width="100%"
+          card1Height="23.26%"
+          card1Top="25.58%"
+          card1Right="0%"
+          card1Bottom="51.16%"
+          card1Left="0%"
+          vectorBackgroundColor="#ff2424"
+          subtitleColor="#d0fd3e"
+          rectangleDivBackgroundColor="#ff2424"
+        />
+        <Card1
+          exerciseImageSize="/image20@2x.png"
+          exerciseTitle="Wake Up Call"
+          exerciseTime="04 Workouts  for Beginner"
+          showProBadge={showProBadge1}
+          card1Position="absolute"
+          card1Width="100%"
+          card1Height="23.26%"
+          card1Top="0%"
+          card1Right="0%"
+          card1Bottom="76.74%"
+          card1Left="0%"
+          vectorBackgroundColor="#d0fd3e"
+          subtitleColor="#d0fd3e"
+          rectangleDivBackgroundColor="#f6a800"
+        />
       </div>
-      <img
-        className="absolute h-[11.39%] w-full top-[88.61%] right-[0%] bottom-[0%] left-[0%] max-w-full overflow-hidden max-h-full"
-        alt=""
-        src="/navigation-bar2.svg"
+      <NavigationBarIcon
+        imageDimensions="/navigation-bar2.svg"
+        navigationBarIconPosition="absolute"
+        navigationBarIconWidth="100%"
+        navigationBarIconHeight="11.39%"
+        navigationBarIconTop="88.61%"
+        navigationBarIconRight="0%"
+        navigationBarIconBottom="0%"
+        navigationBarIconLeft="0%"
+        navigationBarIconMaxWidth="100%"
+        navigationBarIconOverflow="hidden"
+        navigationBarIconMaxHeight="100%"
       />
       <img
         className="absolute top-[744px] left-[291px] rounded-45xl w-9 h-9 object-cover"

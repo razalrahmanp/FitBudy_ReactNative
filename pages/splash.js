@@ -1,6 +1,6 @@
 const Splash = () => {
   return (
-    <div className="relative bg-dark-1 w-[378px] h-[756px] overflow-hidden flex flex-col py-[244px] px-[41px] box-border items-center justify-end gap-[40px] text-center text-[70px] text-primary font-integral-cf">
+    <div className="relative bg-dark-1 w-full h-[756px] overflow-hidden flex flex-col py-[244px] px-[41px] box-border items-center justify-end gap-[40px] text-center text-[70px] text-primary font-integral-cf">
       <img
         className="relative w-[117px] h-[116px] object-cover"
         alt=""

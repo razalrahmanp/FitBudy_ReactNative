@@ -1,3 +1,5 @@
+import DefaultButton from "../components/default-button";
+
 const Subscription = () => {
   return (
     <div className="relative bg-dark-1 w-full h-[812px] overflow-hidden text-left text-2xs text-white font-body-regular">
@@ -18,13 +20,19 @@ const Subscription = () => {
           Be Premium
         </b>
       </div>
-      <div className="absolute h-[6.16%] w-[70.13%] top-[89.9%] right-[14.93%] bottom-[3.94%] left-[14.93%] text-center text-mid text-black">
-        <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%]">
-          <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] rounded-3xl bg-primary" />
-          <div className="absolute top-[calc(50%_-_11px)] left-[calc(50%_-_63.5px)] font-semibold">
-            Subscribe Now
-          </div>
-        </div>
+      <div className="absolute h-[6.16%] w-[70.13%] top-[89.9%] right-[14.93%] bottom-[3.94%] left-[14.93%]">
+        <DefaultButton
+          buttonText="Subscribe  Now"
+          defaultButtonPosition="absolute"
+          defaultButtonTop="0%"
+          defaultButtonLeft="0%"
+          defaultButtonWidth="100%"
+          defaultButtonHeight="100%"
+          defaultButtonRight="0%"
+          defaultButtonBottom="0%"
+          buttonTextLeft="calc(50% - 63.5px)"
+          buttonTextColor="#000"
+        />
       </div>
       <div className="absolute top-[487px] left-[32px] w-[311px] h-[74px]">
         <div className="absolute top-[0px] left-[0px] rounded-2xl bg-red-200 box-border w-[311px] h-[74px] border-[1px] border-solid border-red-100" />

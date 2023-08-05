@@ -1,11 +1,12 @@
 import { useCallback } from "react";
 import { useRouter } from "next/router";
+import SmallButton from "../components/small-button";
 
 const Onboarding3 = () => {
   const router = useRouter();
 
   const onSmallButtonClick = useCallback(() => {
-    router.push("/gender");
+    router.push("/gender1");
   }, [router]);
 
   return (
@@ -24,21 +25,20 @@ const Onboarding3 = () => {
             </p>
           </div>
         </div>
-        <button
-          className="cursor-pointer [border:none] py-[13px] pr-5 pl-7 bg-primary rounded-29xl w-[185px] flex flex-row box-border items-center justify-center"
-          onClick={onSmallButtonClick}
-        >
-          <div className="flex flex-row items-start justify-start gap-[8px]">
-            <div className="relative text-mid font-semibold font-body-regular text-black text-center">
-              Start Now
-            </div>
-            <img
-              className="relative w-6 h-6 overflow-hidden shrink-0"
-              alt=""
-              src="/chevronright2.svg"
-            />
-          </div>
-        </button>
+        <SmallButton
+          buttonText="Start Now"
+          iconImageUrl="/chevronright1.svg"
+          showChevronRightIcon
+          smallButtonPosition="unset"
+          smallButtonTop="unset"
+          smallButtonLeft="unset"
+          smallButtonCursor="pointer"
+          smallButtonBorder="none"
+          smallButtonWidth="185px"
+          signUpColor="#000"
+          signUpDisplay="inline-block"
+          onSmallButtonContainerClick={onSmallButtonClick}
+        />
       </div>
       <div className="w-[88px] h-1 flex flex-row items-center justify-start gap-[10px]">
         <div className="relative bg-dark-3 w-4 h-1" />

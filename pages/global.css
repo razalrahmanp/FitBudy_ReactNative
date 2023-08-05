@@ -1,7 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=SF+Pro+Text:wght@400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Integral+CF:wght@400;700;800&display=swap");
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("/public/SF-Pro-Text-Regular.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Integral CF";
+  src: url("/public/Fontspring-DEMO-integralcf-regular.otf");
+  font-weight: 400;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

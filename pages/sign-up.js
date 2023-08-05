@@ -1,45 +1,42 @@
+import HomeContainer from "../components/home-container";
+import SmallButton from "../components/small-button";
+import AccountButtonIcon from "../components/account-button-icon";
+import Property1Placeholder from "../components/property1-placeholder";
+
 const SignUp = () => {
   return (
-    <div className="relative bg-dark-1 w-full h-[801px] overflow-hidden text-left text-mid text-white font-body-regular">
-      <div className="absolute top-[0px] left-[0px] w-[375px] h-96 text-3xs font-integral-cf">
-        <img
-          className="absolute top-[0px] left-[0px] w-[375px] h-96 object-cover"
-          alt=""
-          src="/background5@2x.png"
+    <div className="relative bg-dark-1 w-full h-[801px] overflow-hidden text-left text-smi text-white font-body-regular">
+      <HomeContainer />
+      <div className="absolute top-[714px] left-[32px] w-[310px] h-[54px]">
+        <SmallButton
+          buttonText="Sign up"
+          iconImageUrl="/chevronright.svg"
+          showChevronRightIcon
+          smallButtonPosition="absolute"
+          smallButtonTop="2px"
+          smallButtonLeft="169px"
+          smallButtonCursor="unset"
+          smallButtonBorder="unset"
+          smallButtonWidth="unset"
+          signUpColor="#000"
+          signUpDisplay="inline-block"
         />
-        <div className="absolute top-[269px] left-[34px] leading-[16px]">
-          <p className="m-0">Enter your informations below or</p>
-          <p className="m-0">login with a other account</p>
-        </div>
-        <div className="absolute top-[214px] left-[32px] text-13xl leading-[43px]">
-          <span>Hello</span>
-          <span className="font-light font-inter">{` `}</span>
-          <b>rookies,</b>
-        </div>
-      </div>
-      <div className="absolute top-[714px] left-[32px] w-[310px] h-[54px] text-center text-black">
-        <div className="absolute top-[2px] left-[169px] rounded-29xl bg-primary flex flex-row py-[13px] pr-5 pl-7 items-center justify-center">
-          <div className="flex flex-row items-start justify-start gap-[8px]">
-            <div className="relative font-semibold">Sign up</div>
-            <img
-              className="relative w-6 h-6 overflow-hidden shrink-0"
-              alt=""
-              src="/chevronright1.svg"
-            />
-          </div>
-        </div>
-        <img
-          className="absolute top-[0px] left-[75px] w-[54px] h-[54px]"
-          alt=""
-          src="/account-button2.svg"
+        <AccountButtonIcon
+          dimensionCode="/account-button2.svg"
+          accountButtonIconPosition="absolute"
+          accountButtonIconTop="0px"
+          accountButtonIconLeft="75px"
+          accountButtonIconCursor="unset"
         />
-        <img
-          className="absolute top-[0px] left-[0px] w-[54px] h-[54px]"
-          alt=""
-          src="/account-button3.svg"
+        <AccountButtonIcon
+          dimensionCode="/account-button3.svg"
+          accountButtonIconPosition="absolute"
+          accountButtonIconTop="0px"
+          accountButtonIconLeft="0px"
+          accountButtonIconCursor="unset"
         />
       </div>
-      <div className="absolute top-[58px] left-[32px] w-[114px] h-[26px] text-smi">
+      <div className="absolute top-[58px] left-[32px] w-[114px] h-[26px]">
         <div className="absolute top-[0px] left-[0px] leading-[16px] font-semibold">
           Login
         </div>
@@ -49,30 +46,27 @@ const SignUp = () => {
         <div className="absolute top-[23px] left-[67px] bg-primary w-[47px] h-[3px]" />
       </div>
       <div className="absolute top-[414px] left-[32px] w-[311px] h-[220px]">
-        <div className="absolute top-[0px] left-[0px] w-[311px] h-[60px]">
-          <img
-            className="absolute h-[1.67%] w-full top-[99.17%] right-[0%] bottom-[-0.83%] left-[0%] rounded-xl max-w-full overflow-hidden max-h-full"
-            alt=""
-            src="/rectangle.svg"
-          />
-          <div className="absolute top-[19px] left-[16px]">Email</div>
-        </div>
-        <div className="absolute top-[80px] left-[0px] w-[311px] h-[60px]">
-          <img
-            className="absolute h-[1.67%] w-full top-[99.17%] right-[0%] bottom-[-0.83%] left-[0%] rounded-xl max-w-full overflow-hidden max-h-full"
-            alt=""
-            src="/rectangle.svg"
-          />
-          <div className="absolute top-[19px] left-[16px]">Password</div>
-        </div>
-        <div className="absolute top-[160px] left-[0px] w-[311px] h-[60px]">
-          <img
-            className="absolute h-[1.67%] w-full top-[99.17%] right-[0%] bottom-[-0.83%] left-[0%] rounded-xl max-w-full overflow-hidden max-h-full"
-            alt=""
-            src="/rectangle.svg"
-          />
-          <div className="absolute top-[19px] left-[16px]">Password again</div>
-        </div>
+        <Property1Placeholder
+          inputPlaceholder="Email"
+          property1PlaceholderPosition="absolute"
+          property1PlaceholderTop="0px"
+          property1PlaceholderLeft="0px"
+          placeholderColor="#fff"
+        />
+        <Property1Placeholder
+          inputPlaceholder="Password"
+          property1PlaceholderPosition="absolute"
+          property1PlaceholderTop="80px"
+          property1PlaceholderLeft="0px"
+          placeholderColor="#fff"
+        />
+        <Property1Placeholder
+          inputPlaceholder="Password again"
+          property1PlaceholderPosition="absolute"
+          property1PlaceholderTop="160px"
+          property1PlaceholderLeft="0px"
+          placeholderColor="#fff"
+        />
       </div>
     </div>
   );
